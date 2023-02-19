@@ -1,0 +1,65 @@
+.main-title {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0.1em;
+  color: $black;
+}
+.head-title {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 100%;
+  /* identical to box height, or 48px */
+
+  letter-spacing: 0.03em;
+
+  color: $black;
+}
+.wallet {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 180%;
+  /* or 23px */
+
+  text-align: center;
+
+  color: $black;
+}
+.card-title {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0.1em;
+  color: $black;
+}
+
+.card-sub-title {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+
+  color: $black;
+}
+
+.link {
+  ont-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 140%;
+  /* identical to box height, or 17px */
+  text-align: center;
+
+  color: $black;
+}

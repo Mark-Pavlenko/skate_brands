@@ -1,0 +1,32 @@
+.self-card {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 375px;
+  height: 357px;
+  margin: 0 auto;
+  margin-top: 20px;
+  flex-direction: column;
+  padding-left: 37px;
+  padding-right: 37px;
+  background: rgba(255, 255, 255, 0.53);
+  border: 1px solid #ebebeb;
+  backdrop-filter: blur(19px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 40px;
+
+  @media all and (max-width: 1440px) {
+    border-radius: 40px 40px 0px 0px;
+  }
+}
+
+.auth-container {
+  padding-top: 165px;
+  min-height: calc(100vh - 271px);
+  background-image: url("@/assets/img/bg-layout.png") !important ;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}

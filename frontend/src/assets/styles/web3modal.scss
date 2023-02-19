@@ -1,0 +1,23 @@
+.w3ajs-email-passwordless-form {
+  flex-direction: column;
+}
+
+.w3a-parent-container #w3a-modal {
+  z-index: 3;
+}
+
+.w3a-parent-container #w3a-modal button.w3a-button-expand {
+  display: none;
+}
+
+.w3ajs-email-passwordless {
+  display: none;
+}
+
+.w3a-parent-container #w3a-modal .w3a-modal__inner {
+  min-height: 430px;
+}
+
+.w3ajs-wallet-connect.w3a-wallet-connect {
+  display: none !important;
+}
