@@ -1,4 +1,4 @@
-# Social Good
+# T Skate Brands
 
 ## Config frontend .env
 - cd frontend
@@ -24,7 +24,7 @@ docker-compose down
 
 ## Deploy localhost API for frontend development
 ### Build docker image for localhost API
-- back to `social-good-web3` directory
+- back to `t_skate_brands` directory
 - build docker image
 ```
 docker-compose build
@@ -52,7 +52,7 @@ http://localhost:8080/
 
 ## Deploy development
 ## Build for development
-- back to `social-good-web3` directory
+- back to `t_skate_brands` directory
 - build docker image
 ```
 docker-compose -f ./docker-compose-prod.yml build
@@ -61,7 +61,7 @@ docker-compose -f ./docker-compose-prod.yml build
 
 ## Build staging
 ## Build for staging
-- back to `social-good-web3` directory
+- back to `t_skate_brands` directory
 - build docker image
 ```
 docker-compose -f ./docker-compose-prod.yml build
@@ -73,7 +73,7 @@ docker-compose -f ./docker-compose-prod.yml build
 - Frontend: frontend/.env.production
 - Batch: batch/.env
 ### Build for production
-- back to `social-good-web3` directory
+- back to `t_skate_brands` directory
 - build docker image
 ```
 docker-compose -f ./docker-compose-prod.yml build
