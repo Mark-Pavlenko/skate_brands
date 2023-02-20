@@ -1,40 +1,65 @@
 <template>
   <div id="main-footer">
-    <div class="container_inner d-flex flex-column align-items-flex-start">
-      <a href="https://revisionartproject.com/" target="_blank">{{
-        $t("donation_site")
-      }}</a>
-      <a href="" target="_blank">{{ $t("terms") }}</a>
-      <a href="" target="_blank">{{ $t("privacy") }}</a>
-      <a
-        href="https://docs.google.com/forms/d/e/1FAIpQLSdzrCEliuSeMPJfZaI3XCAiPfLgnfJH3C8ZUQvNoxB6zlzoOg/viewform?usp=sf_link"
-        target="_blank"
-        >{{ $t("contact") }}</a
-      >
+    <div id="footer-content">
+      <div id="links">
+        <a href="#">お問い合わせ</a>
+        <a href="#">利用規約</a>
+        <a href="#">プライバシーポリシー</a>
+        <a href="#">OFFICIAL SITE</a>
+      </div>
     </div>
-    <p id="copyright">©︎2023 UNHCR</p>
+    <p id="copyright">
+      ALL RIGHTS RESERVED HUF™ WORLDWIDE ©2022
+    </p>
   </div>
 </template>
 
 <style scoped>
 #main-footer {
-  padding: 32px;
+  position: absolute;
+  width: 100%;
+  height: 112px;
   background-color: #000;
 }
-#main-footer a {
-  color: #fff;
+
+#footer-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 39px;
 }
+
+#links{
+  display: flex;
+  gap: 30px;
+}
+
+#links a {
+  font-family: 'Archivo Expanded', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 13px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #94C93D;
+  text-decoration: none;
+}
+
 #copyright {
-  color: #fff;
-  font-size: 16px;
-  margin-top: 48px;
+  font-family: 'Archivo Expanded', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  color: #949494;
+  margin-top:17px;
+  margin-bottom: 29px;
 }
-.flex-column {
-  flex-direction: column !important;
-  gap: 12px;
-}
-.align-items-flex-start {
-  align-items: flex-start;
+
+@media all and (max-width: 768px) {
+  #main-footer {
+    margin-bottom: 115px;
+  }
 }
 </style>
 
