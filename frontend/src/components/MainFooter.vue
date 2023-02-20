@@ -53,12 +53,22 @@
   font-size: 10px;
   color: #949494;
   margin-top:17px;
-  margin-bottom: 29px;
+  margin-bottom: 0;
 }
 
 @media all and (max-width: 768px) {
   #main-footer {
-    margin-bottom: 115px;
+    height: 241px;
+  }
+
+  #links{
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 10px;
+  }
+
+  #copyright {
+    margin-top: 13px;
   }
 }
 </style>
