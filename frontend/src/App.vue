@@ -1,5 +1,5 @@
 <template>
-  <MainHeader />
+<!--  <MainHeader />-->
   <div class="body-content">
     <router-view />
   </div>
@@ -8,7 +8,7 @@
 <script lang="ts">
 import { defineComponent } from "@vue/runtime-core";
 import MainHeader from "@/components/MainHeader.vue";
-import MainFooter from "@/components/MainFooter.vue";
+import MainFooter from "@/components/Footer.vue";
 
 export default defineComponent({
   components: {

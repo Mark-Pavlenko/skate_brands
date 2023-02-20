@@ -3,6 +3,7 @@ import CodeVerification from "../views/CodeVerification.vue";
 import MyPage from "../views/MyPage.vue";
 import SignIn from "../views/SignIn.vue";
 import TopView from "../views/TopView.vue";
+import MainPage from "@/views/MainPage.vue";
 
 const DEFAULT_TITLE = "RE:";
 
@@ -10,9 +11,9 @@ const routes = [
   {
     path: "/",
     name: "top",
-    component: TopView,
+    component: MainPage,
     meta: {
-      title: `${DEFAULT_TITLE}  Top`,
+      title: `${DEFAULT_TITLE}  Main`,
     },
   },
   {
