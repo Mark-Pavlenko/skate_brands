@@ -13,9 +13,13 @@ import MasonryWall from '@yeger/vue-masonry-wall'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue-3/dist/bootstrap-vue-3.css'
 import mitt from "mitt";
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+library.add(faArrowRight);
 const emitter = mitt();
 
-const app = createApp(App).use(i18n).use(router).use(store).use(VueSweetalert2).use(Web3AuthPlugin).use(AxiosPlugin).use(MasonryWall).use(BootstrapVue3);
+const app = createApp(App).use(i18n).use(router).use(store).use(VueSweetalert2).use(Web3AuthPlugin).use(AxiosPlugin).use(MasonryWall).use(BootstrapVue3).component('font-awesome-icon', FontAwesomeIcon);
 app.provide("MAX_POST_CHARACTERS", 400);
 app.config.globalProperties.emitter = emitter;
 app.mount("#app");

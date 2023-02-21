@@ -26,7 +26,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 39px;
+  margin-top: 35px;
 }
 
 #links{
@@ -54,6 +54,7 @@
   color: #949494;
   margin-top:17px;
   margin-bottom: 0;
+  text-align: center;
 }
 
 @media all and (max-width: 768px) {

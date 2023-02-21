@@ -13,7 +13,12 @@
     <div id="newsletter-label">
       <p>JOIN OUR NEWSLETTER</p>
     </div>
+    <div id="email-block">
+    <div id="follow-input-wrapper">
+      <span>&rarr;</span>
     <input id="newsletter-email" type="email" placeholder="Your Email"/>
+    </div>
+    </div>
   </div>
 </template>
 
@@ -43,6 +48,7 @@ export default {
     letter-spacing: -0.02em;
     color: #FFFFFF;
     margin-bottom: 0;
+    text-align: center;
   }
 
   #icons-group {
@@ -65,15 +71,51 @@ export default {
     color: #FFFFFF;
   }
 
-  #newsletter-email{
+  #email-block {
+    display: flex;
+    justify-content: center;
+  }
+
+  #follow-input-wrapper{
+    display: inline-block;
+    position: relative;
+  }
+
+  #follow-input-wrapper input {
     width: 377px;
     height: 49px;
     background-color: #303030;
     border: none;
   }
 
-  /*#newsletter-email[type="text"], textarea {*/
+  #follow-input-wrapper span {
+    position: absolute;
+    left: auto;
+    top: 13px;
+    right: 30px;
+    color: #949494;
+  }
 
-  /*  color: #303030;*/
-  /*}*/
+  span:hover{
+    cursor: pointer;
+  }
+  
+
+  #newsletter-email::placeholder{
+    color: #949494;
+    font-family: 'Archivo Expanded',serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  input, textarea{
+    color: #FFFFFF;
+    padding-left: 21px;
+  }
+
+  #newsletter-email:focus{
+    outline: none;
+  }
 </style>
