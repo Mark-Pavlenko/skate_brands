@@ -3,6 +3,7 @@
     <div id="img-layout">
       <img src="@/assets/images/huf-nft-set.png" alt="huf-nft-set"/>
     </div>
+      <button id="join-now-btn">JOIN NOW</button>
   </div>
 </template>
 
@@ -15,13 +16,22 @@ export default {
 <style scoped>
   #huf-nft-set {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    /*background-color: lightgreen;*/
   }
 
   #img-layout img{
     max-width: 100%;
+  }
+
+  #join-now-layout{
+
+  }
+
+  #join-now-btn {
+    color: #94C93D;
+    border: 2px solid #94C93D;
   }
 
 @media(max-width: 1279px){
@@ -33,6 +43,7 @@ export default {
     margin: 0 19px 0 19px;
   }
 }
+
   @media(min-width: 745px){
     #img-layout{
       width: 743px;
@@ -44,8 +55,6 @@ export default {
   #huf-nft-set{
     height: 800px;
   }
-
-
 }
 
 </style>
