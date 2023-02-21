@@ -31,7 +31,7 @@ export default {
 <style scoped>
   #follow-now-block {
     height: 393px;
-    background-color: #000;
+    background-color: #101010B2;
   }
 
   #follow-label-block {
@@ -117,5 +117,25 @@ export default {
 
   #newsletter-email:focus{
     outline: none;
+  }
+
+  @media (max-width: 1279px){
+    #follow-label-block p {
+      font-size: 28px;
+      line-height: 20px;
+    }
+
+    #follow-input-wrapper input {
+      width: 267px;
+      height: 35px;
+    }
+
+    #newsletter-email::placeholder{
+      font-size: 12px;
+    }
+
+    input, textarea{
+      padding-left: 25px;
+    }
   }
 </style>

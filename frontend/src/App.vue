@@ -1,5 +1,4 @@
-<template>
-<!--  <MainHeader />-->
+<template id="test">
   <div class="body-content">
     <router-view />
   </div>
@@ -19,8 +18,17 @@ export default defineComponent({
 </script>
 
 <style>
+.body-content{
+  /*background-color: lightblue;*/
+}
   body {
     margin: 0 !important;
+    background-image: url("@/assets/images/background-page.png") !important ;
+    background-attachment: fixed;
+    width: 100%;
+    height: calc(100vw / (1280 / 800));
+    background-repeat: no-repeat;
+    background-size: 100% auto;
   }
 </style>
 
