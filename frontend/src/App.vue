@@ -18,9 +18,6 @@ export default defineComponent({
 </script>
 
 <style>
-.body-content{
-  /*background-color: lightblue;*/
-}
   body {
     margin: 0 !important;
     background-image: url("@/assets/images/background-page.png") !important ;
@@ -28,7 +25,7 @@ export default defineComponent({
     width: 100%;
     height: calc(100vw / (1280 / 800));
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: 100% 100%;
   }
 </style>
 

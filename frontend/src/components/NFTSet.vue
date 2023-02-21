@@ -17,37 +17,35 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: lightgreen;
+    /*background-color: lightgreen;*/
   }
-
-#img-layout{
-}
 
   #img-layout img{
     max-width: 100%;
   }
 
-@media(max-width: 390px){
+@media(max-width: 1279px){
   #huf-nft-set{
     height: 680px;
   }
+
+  #img-layout{
+    margin: 0 19px 0 19px;
+  }
 }
+  @media(min-width: 745px){
+    #img-layout{
+      width: 743px;
+      height: 231px;
+    }
+  }
 
 @media (min-width: 1280px) {
   #huf-nft-set{
     height: 800px;
   }
 
-  #img-layout{
-    width: 743px;
-    height: 231px;
-  }
-}
 
-@media (max-width: 1279px){
-  #img-layout{
-    margin: 0 19px 0 19px;
-  }
 }
 
 </style>

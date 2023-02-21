@@ -2,17 +2,8 @@
   <div id="main-page">
     <NFTSet/>
     <WhatIsThis/>
-    <p>Main page</p>
-    <p>Main page</p>
-    <p>Main page</p>
-    <p>Main page</p>
-    <p>Main page</p>
-    <p>Main page</p>
-    <p>Main page</p>
-    <p>Main page</p>
-    <p>Main page</p>
-    <p>Main page</p>
-  <FollowNow />
+    <GetNFT/>
+    <FollowNow />
   </div>
 </template>
 
@@ -21,9 +12,10 @@ import { defineComponent } from "vue";
 import FollowNow from "@/components/FollowNow.vue";
 import NFTSet from "@/components/NFTSet.vue";
 import WhatIsThis from "@/components/WhatIsThis.vue";
+import GetNFT from '@/components/GetNFT.vue';
 export default defineComponent({
 name: "MainPage",
-  components: { FollowNow, NFTSet, WhatIsThis }
+  components: { FollowNow, NFTSet, WhatIsThis, GetNFT }
 });
 </script>
 
