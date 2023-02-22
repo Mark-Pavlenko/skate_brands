@@ -7,14 +7,14 @@
     <div id="event-layout">
     <div id="event-items-blocks">
       <div id="event-block" class="item">
-        <h3>Event</h3>
+        <h3>EVENT</h3>
       <p class="description item-description">
         NFT 保有者のみ参加できる イベントの開催
       </p>
       </div>
       <div id="delimiter"></div>
       <div id="item-block" class="item">
-        <h3>Item</h3>
+        <h3>ITEM</h3>
       <p class="description item-description" >アーティストのコラボレーション アイテムを限定販売</p>
       </div>
     </div>
@@ -43,7 +43,7 @@ export default {
   font-size: 48px;
   line-height: 40px;
   text-align: center;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.08em;
   color: #FFFFFF;
 }
 
@@ -100,6 +100,7 @@ export default {
   line-height: 32px;
   text-align: center;
   color: #FFFFFF;
+  letter-spacing: 0.05em;
 }
 
 </style>
