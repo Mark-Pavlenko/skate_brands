@@ -73,6 +73,7 @@ export default {
 #event-items-blocks {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
   margin-top: 85px;
 }
@@ -101,6 +102,41 @@ export default {
   text-align: center;
   color: #FFFFFF;
   letter-spacing: 0.05em;
+}
+
+@media (max-width: 767px){
+  #event-layout{
+    display: block;
+  }
+
+  #event-items-blocks{
+    margin: 55px 27.5px 0 25px;
+  }
+
+  #title{
+    font-size: 28px;
+    line-height: 20px;
+  }
+
+  #event-block {
+    margin-right: 9px;
+  }
+
+  #item-block {
+    margin-left: 16px;
+    width: 170px;
+  }
+
+  .description{
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .item h3{
+    font-size: 20px;
+    line-height: 21px;
+  }
+
 }
 
 </style>

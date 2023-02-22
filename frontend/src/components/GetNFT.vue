@@ -3,9 +3,10 @@
     <div id="title-block-layout">
       <p id="get-nft-title">GET <br/>YOUR NFT</p>
     </div>
+    <div id="image-container">
       <img src="@/assets/images/get-nft-card.png" alt="get-nft-card"/>
+    </div>
   </div>
-
 </template>
 
 <script>
@@ -24,8 +25,8 @@ export default {
 }
 
 #main img {
-  width: 75%;
-  margin-bottom: 35px;
+  /*width: 75%;*/
+  /*margin-bottom: 35px;*/
 }
 
 #title-block-layout{
@@ -47,6 +48,17 @@ export default {
   line-height: 100px;
   letter-spacing: -0.02em;
   color: #FFFFFF;
+}
+
+#image-container {
+  background-color: red;
+  height: 925px;
+  margin-left:207px;
+}
+
+#image-container img {
+  max-width:100%;
+  max-height:100%;
 }
 
 </style>
