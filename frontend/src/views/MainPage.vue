@@ -21,6 +21,12 @@ name: "MainPage",
 
 <style scoped>
     #main-page {
-      /*background-color: #000;*/
+      margin: 0 !important;
+      background-image: url("@/assets/images/background-page.png") !important ;
+      background-attachment: fixed;
+      /*width: 100%;*/
+      /*height: calc(100vw / (1280 / 1000));*/
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
     }
 </style>
