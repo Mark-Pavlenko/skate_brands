@@ -104,7 +104,11 @@ export default {
   letter-spacing: 0.05em;
 }
 
-@media (max-width: 767px){
+@media (max-width: 750px){
+  #layout {
+    height: 390px;
+  }
+
   #event-layout{
     display: block;
   }
