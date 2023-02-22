@@ -31,7 +31,7 @@ export default {
 <style scoped>
   #follow-now-block {
     height: 393px;
-    background-color: #101010B2;
+    background-color: black;
   }
 
   #follow-label-block {
