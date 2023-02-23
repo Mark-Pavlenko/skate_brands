@@ -16,8 +16,8 @@ import WhatIsThis from "@/components/WhatIsThis.vue";
 import GetNFT from '@/components/GetNFT.vue';
 import RemioArtSession from '@/components/RemioArtSession.vue';
 export default defineComponent({
-name: "MainPage",
-  components: { FollowNow, NFTSet, WhatIsThis, GetNFT, RemioArtSession }
+  name: "MainPage",
+  components: {FollowNow, NFTSet, WhatIsThis, GetNFT, RemioArtSession },
 });
 </script>
 
