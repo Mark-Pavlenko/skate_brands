@@ -7,8 +7,8 @@
         HUF JAPAN OFFICIAL ONLINE STOREで商品をご購入した方（数に限りがございます）
         配布期間：2023年XX月XX日〜XX月XX日
       </p>
-      <p class="active-link">ONLINE STORE</p>
-      <p class="active-link">SHOP LIST</p>
+        <a href="#" id="online-store" class="active-link">ONLINE STORE</a>
+        <a href="#" class="active-link">SHOP LIST</a>
     </div>
     <div id="img-layout">
       <img src="@/assets/images/get-nft-card.png" alt="get-nft-card"/>
@@ -72,11 +72,15 @@ export default {
 
 #description {
   margin-top: 5px;
-
   width: 530px;
 }
 
+#online-store {
+  padding-bottom: 10px;
+}
+
 .active-link{
+  text-decoration: none;
   font-family: 'Archivo Expanded';
   font-style: normal;
   font-weight: 400;
@@ -85,10 +89,6 @@ export default {
   display: flex;
   align-items: center;
   color: #94C93D;
-}
-
-.active-link:first-child{
-  margin-top: 8px;
 }
 
 #img-layout{

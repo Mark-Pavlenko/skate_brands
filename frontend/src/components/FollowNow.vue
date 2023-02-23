@@ -77,7 +77,8 @@ export default {
   }
 
   #follow-input-wrapper{
-    display: inline-block;
+    display: flex;
+    align-items: center;
     position: relative;
   }
 
@@ -128,6 +129,10 @@ export default {
     #follow-input-wrapper input {
       width: 267px;
       height: 35px;
+    }
+
+    #follow-input-wrapper span{
+      top: auto;
     }
 
     #newsletter-email::placeholder{
