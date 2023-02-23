@@ -74,7 +74,6 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
   margin-top: 85px;
 }
 
@@ -115,6 +114,7 @@ export default {
 
   #event-items-blocks{
     margin: 55px 27.5px 0 25px;
+
   }
 
   #title{
@@ -122,8 +122,13 @@ export default {
     line-height: 20px;
   }
 
+  #item-block{
+    margin-top: 5px;
+  }
+
   #event-block {
     margin-right: 9px;
+    margin-top: 5px;
   }
 
   #item-block {

@@ -120,7 +120,7 @@ export default {
     outline: none;
   }
 
-  @media all and (min-width: 320px) and (max-width: 1279px) {
+  @media all and (min-width: 320px) and (max-width: 1200px) {
     #follow-label-block{
       padding-top:135px;
       padding-bottom: 0;
