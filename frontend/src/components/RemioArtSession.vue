@@ -4,7 +4,9 @@
       <h1>REMIO ART SESSION</h1>
     </div>
     <div id="art-session-layout">
-      <img src="@/assets/images/remio-art-session.png" alt="remio-art-session.png"/>
+      <img id="remio-art-session" src="@/assets/images/remio-art-session.png" alt="remio-art-session.png"/>
+      <img id="remio-art-session-mobile" src="@/assets/images/remio-art-session-mobile.png"
+           alt="remio-art-session-mobile.png"/>
     </div>
     <h2 id="date-title">SAT JUNE 6, 7PM-10PM</h2>
     <p id="description">
@@ -18,11 +20,12 @@
           REMIOコラボレーションの限定アイテムを多数販売。
         </p>
         <div id="sweetshots-grid">
-          <img src="@/assets/images/sweetshot_1.png" alt="sweetshot_1.png" />
-          <img src="@/assets/images/sweetshot_2.png" alt="sweetshot_2.png" />
-          <img src="@/assets/images/sweetshot_3.png" alt="sweetshot_3.png" />
+          <img src="@/assets/images/sweetshot_1.png" alt="sweetshot_1.png"/>
+          <img src="@/assets/images/sweetshot_2.png" alt="sweetshot_2.png"/>
+          <img src="@/assets/images/sweetshot_3.png" alt="sweetshot_3.png"/>
         </div>
         <div id="info-list-wrapper">
+          <h4 id="info-title-mobile">INFORMATION</h4>
           <ul id="info-list">
             <li> イベントの参加にはNFTが必要です。</li>
             <li> 会員様１名に加えてもう１名の参加が可能です。</li>
@@ -33,11 +36,12 @@
             <li id="no-dot">
               換気、ソーシャルディスタンスによる3密の回避、会場入口での検温、消毒などと共に、
               従業員の体調確認についても徹底管理し万全を期して取り組みますので、どうぞご安心い
-              ただければ幸いです。</li>
+              ただければ幸いです。
+            </li>
           </ul>
-<!--          <p>-->
+          <!--          <p>-->
 
-<!--          </p>-->
+          <!--          </p>-->
         </div>
       </div>
       <div id="art-block" class="item">
@@ -115,7 +119,7 @@ export default {
 #event-items-blocks {
   display: flex;
   flex-direction: row;
-  padding: 45px 50px 0 0;
+  padding: 45px 0 0 0;
   column-count: 2;
   justify-content: space-between;
 }
@@ -171,7 +175,7 @@ export default {
   color: #949494;
 }
 
-#no-dot::marker{
+#no-dot::marker {
   content: none;
 }
 
@@ -198,15 +202,15 @@ export default {
   height: auto;
 }
 
-@media all and (min-width: 320px) and (max-width: 1200px)  {
-  #remio{
+@media all and (min-width: 320px) and (max-width: 1200px) {
+  #remio {
     padding: 125px 20px 0 20px;
   }
 
   #event-items-blocks {
     flex-direction: column;
     column-count: 1;
-    padding: 45px 20px 0 0;
+    padding: 30px 0 0 0;
   }
 
   #art-block {
@@ -214,7 +218,7 @@ export default {
     width: auto;
   }
 
-  #info-list{
+  #info-list {
     width: auto;
   }
 
@@ -226,29 +230,71 @@ export default {
     width: auto;
     font-size: 40px;
     line-height: 36px;
+    margin-top: 30px;
   }
 
-  #remio-title-wrapper h1{
+  #remio-title-wrapper h1 {
     font-size: 60px;
     line-height: 48px;
   }
 
-  #description{
-  width: auto;
-   }
+  #description {
+    width: auto;
+  }
 
-  #sweetshots-grid{
+  #sweetshots-grid {
     width: auto;
   }
 }
 
+@media all and (max-width: 479px) {
+  #remio-art-session {
+    display: none;
+  }
+
+  #limited-items h4{
+    font-size: 20px;
+    line-height: 21px;
+  }
+
+  #info-title-mobile{
+    margin-top: 40px;
+    font-family: 'Archivo Expanded';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 21px;
+    letter-spacing: -0.02em;
+  }
+
+  #info-list{
+    margin: 0 0 0 12px;
+    font-family: 'YuGothic';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+  }
+}
+
+@media all and (min-width: 480px) {
+  #remio-art-session-mobile{
+    display: none;
+  }
+
+  #info-title-mobile {
+    display: none;
+  }
+}
+
 @media all and (min-width: 1440px) {
-  #event-items-blocks{
+  #event-items-blocks {
     column-gap: normal;
     justify-content: space-between;
   }
 }
-
 
 
 </style>
