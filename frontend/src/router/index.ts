@@ -2,8 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import CodeVerification from "../views/CodeVerification.vue";
 import MyPage from "../views/MyPage.vue";
 import SignIn from "../views/SignIn.vue";
-import TopView from "../views/TopView.vue";
-import MainPage from "@/views/MainPage.vue";
+import MainPage from "../views/MainPage.vue";
 
 const DEFAULT_TITLE = "RE:";
 
@@ -13,7 +12,7 @@ const routes = [
     name: "top",
     component: MainPage,
     meta: {
-      title: `${DEFAULT_TITLE}  Main`,
+      title: `${DEFAULT_TITLE}  Main Page`,
     },
   },
   {

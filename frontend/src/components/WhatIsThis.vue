@@ -32,7 +32,7 @@ export default {
 
 #layout {
   background: rgba(16, 16, 16, 0.7);
-  height: 405px;
+  height: 500px;
 }
 
 #title{

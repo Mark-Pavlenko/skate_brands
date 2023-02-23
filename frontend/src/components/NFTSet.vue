@@ -1,44 +1,16 @@
 <template>
-<!--  <div >-->
-    <div id="huf-nft-set" :style="{ backgroundImage: 'url(' + getBackgroundImage + ')' }">
+    <div id="huf-nft-set" >
       <img id="event-info-img" src="@/assets/images/event-info-big.png" alt="event-info-big"/>
       <div id="img-layout">
         <img src="@/assets/images/huf-nft-set.png" alt="huf-nft-set"/>
       </div>
       <button id="join-now-btn">JOIN NOW</button>
     </div>
-<!--  </div>-->
 </template>
 
 <script>
 export default {
   name: "NFTSet",
-  data() {
-    return {
-      scrollTop: 1,
-      selectedDog: "",
-      backUrl: ""
-    };
-  },
-  methods: {
-    handleScroll() {
-      this.scrollTop = Math.round(window.scrollY / 3);
-      console.log('this.scrollTop', this.scrollTop);
-      this.backUrl = `@/assets/3sec_sample/2sec_sample_${this.scrollTop}.png`;
-      console.log('this./backUrrl', this.backUrl);
-    },
-  },
-  computed: {
-    getBackgroundImage() {
-      return require(`@/assets/3sec_sample/2sec_sample_${this.scrollTop}.png`);
-    }
-  },
-  mounted() {
-    window.addEventListener('scroll', this.handleScroll);
-  },
-  beforeUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
-  },
 };
 </script>
 
@@ -49,11 +21,6 @@ export default {
   justify-content: center;
   align-items: center;
   position: relative;
-  margin: 0 !important;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-
 }
 
 #event-info-img {
