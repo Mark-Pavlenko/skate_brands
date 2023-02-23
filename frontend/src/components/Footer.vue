@@ -5,7 +5,7 @@
         <a href="#">お問い合わせ</a>
         <a href="#">利用規約</a>
         <a href="#">プライバシーポリシー</a>
-        <a href="#">OFFICIAL SITE</a>
+        <a href="#" class="en-label">OFFICIAL SITE</a>
       </div>
     </div>
     <p id="copyright">
@@ -35,7 +35,7 @@
 }
 
 #links a {
-  font-family: 'Archivo Expanded', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 12px;
@@ -57,6 +57,10 @@
   text-align: center;
 }
 
+.en-label{
+  font-family: 'Archivo Expanded', sans-serif !important;
+}
+
 @media all and (min-width: 320px) and (max-width: 1200px) {
   #links{
     flex-wrap: wrap;
@@ -69,8 +73,8 @@
     margin-top: 13px;
   }
 
-  #follow-label-block{
-    /*padding-top:135px;*/
+  .en-label {
+    font-family: 'Archivo Expanded', sans-serif !important;
   }
 }
 </style>

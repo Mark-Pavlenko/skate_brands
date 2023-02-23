@@ -45,7 +45,7 @@ export default {
     font-weight: 800;
     font-size: 48px;
     line-height: 40px;
-    letter-spacing: 0.04em;
+    letter-spacing: -0.02em;
     color: #FFFFFF;
     margin-bottom: 0;
     text-align: center;
@@ -61,14 +61,17 @@ export default {
 
   #newsletter-label {
     margin-top: 50px;
-    font-family: 'Archivo Expanded', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 16px;
     text-align: center;
-    letter-spacing: 0.04em;
+    letter-spacing: -0.02em;
     color: #FFFFFF;
+  }
+
+  #newsletter-label p {
+    font-family: 'Archivo Expanded', sans-serif;
   }
 
   #email-block {
@@ -104,7 +107,7 @@ export default {
 
   #newsletter-email::placeholder{
     color: #949494;
-    font-family: 'Archivo Expanded',serif;
+    font-family: 'Archivo Expanded', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 19px;

@@ -75,7 +75,7 @@ export default {
 }
 
 #remio-title-wrapper h1 {
-  font-family: 'Archivo Expanded';
+  font-family: 'Archivo Expanded', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 120px;
@@ -92,7 +92,7 @@ export default {
 #date-title {
   width: 632px;
   margin-top: 53px;
-  font-family: 'Archivo Expanded';
+  font-family: 'Archivo Expanded', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 80px;
@@ -104,7 +104,7 @@ export default {
 #description {
   margin-top: 30px;
   width: 605px;
-  font-family: 'YuGothic';
+  font-family: 'Noto Sans JP', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -126,7 +126,7 @@ export default {
 }
 
 #limited-items h4 {
-  font-family: 'Archivo Expanded';
+  font-family: 'Archivo Expanded', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 32px;
@@ -135,7 +135,7 @@ export default {
 }
 
 .items-subtitle {
-  font-family: 'YuGothic';
+  font-family: 'Noto Sans JP', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -163,7 +163,7 @@ export default {
 }
 
 #info-list-wrapper {
-  font-family: 'YuGothic';
+  font-family: 'Noto Sans JP', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -182,7 +182,7 @@ export default {
 }
 
 #art-block h3 {
-  font-family: 'Archivo Expanded';
+  font-family: 'Archivo Expanded', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 80px;
@@ -192,8 +192,6 @@ export default {
 }
 
 #column-street-art img {
-  /*width: 480px;*/
-  /*height: 292px;*/
   margin-top: 10px;
   width: 100%;
   height: auto;
@@ -211,7 +209,7 @@ export default {
 
   #info-title-mobile{
     margin-top: 40px;
-    font-family: 'Archivo Expanded';
+    font-family: 'Archivo Expanded', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 20px;
@@ -293,7 +291,7 @@ export default {
   #info-list{
     width: auto;
     margin-top: 10px;
-    font-family: 'YuGothic';
+    font-family: 'Noto Sans JP', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 13px;

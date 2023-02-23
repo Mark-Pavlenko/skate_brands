@@ -46,7 +46,7 @@ export default {
     height: 48px;
     color: #94C93D;
     border: 2px solid #94C93D;
-    font-family: 'Archivo Expanded', serif;
+    font-family: 'Archivo Black', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;

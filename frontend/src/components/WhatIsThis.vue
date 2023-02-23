@@ -37,7 +37,7 @@ export default {
 
 #title{
   padding-top: 62px;
-  font-family: 'Archivo Expanded', serif;
+  font-family: 'Archivo Black', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 48px;
@@ -48,7 +48,7 @@ export default {
 }
 
 .description{
-  font-family: 'YuGothic';
+  font-family: 'Noto Sans JP', sans-serif;
   font-style: normal;
   width: 324px;
   margin: 0 auto;
@@ -93,7 +93,7 @@ export default {
 }
 
 .item h3{
-  font-family: 'Archivo Expanded';
+  font-family: 'Archivo Black', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 32px;

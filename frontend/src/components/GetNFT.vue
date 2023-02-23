@@ -3,8 +3,8 @@
     <div id="title-block-layout">
       <p id="get-nft-title">GET YOUR NFT</p>
       <p id="how-to-get">HOW TO GET</p>
-      <p id="description">取得方法：期間内にHUF FLAGSHIP STORESまたは
-        HUF JAPAN OFFICIAL ONLINE STOREで商品をご購入した方（数に限りがございます）
+      <p id="description">取得方法：期間内に<span class="en-text">HUF FLAGSHIP STORES</span>または
+        <span class="en-text">HUF JAPAN OFFICIAL ONLINE STORE</span>で商品をご購入した方（数に限りがございます）
         配布期間：2023年XX月XX日〜XX月XX日
       </p>
         <a href="#" id="online-store" class="active-link">ONLINE STORE</a>
@@ -30,13 +30,13 @@ export default {
   position: relative;
 }
 
-#get-nft {
-  /*max-width: 70%;*/
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin-top: 50px;
-}
+/*#get-nft {*/
+/*  !*max-width: 70%;*!*/
+/*  position: absolute;*/
+/*  top: 0;*/
+/*  right: 0;*/
+/*  margin-top: 50px;*/
+/*}*/
 
 #title-block-layout{
   display: flex;
@@ -69,9 +69,13 @@ export default {
 }
 
 #description {
+  font-family: 'Noto Sans JP', sans-serif;
   margin-top: 5px;
-  width: 530px;
   width: 40%;
+}
+
+.en-text{
+  font-family: 'Archivo Expanded', sans-serif;
 }
 
 #online-store {
@@ -80,7 +84,7 @@ export default {
 
 .active-link{
   text-decoration: none;
-  font-family: 'Archivo Expanded';
+  font-family: 'Archivo Expanded', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -95,7 +99,7 @@ export default {
   right: 0;
   max-width: 100%;
   height: inherit;
-  padding-top: 150px;
+  padding-top: 100px;
 }
 
 @media all and (min-width: 320px) and (max-width: 1200px) {
@@ -130,7 +134,7 @@ export default {
   }
 
   #get-nft-img {
-    padding-top: 80px;
+    padding-top: 60px;
 
   }
 }
@@ -145,7 +149,6 @@ export default {
     width: 100%;
     height: auto !important;
     top: 0;
-    margin-top:50px;
   }
 }
 
@@ -153,6 +156,7 @@ export default {
   #get-nft-img {
     max-width: 100%;
     max-height: 100%;
+    margin-top:50px;
   }
 
   #description{
