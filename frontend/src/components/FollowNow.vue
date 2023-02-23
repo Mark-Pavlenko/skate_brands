@@ -45,7 +45,7 @@ export default {
     font-weight: 800;
     font-size: 48px;
     line-height: 40px;
-    letter-spacing: -0.02em;
+    letter-spacing: 0.04em;
     color: #FFFFFF;
     margin-bottom: 0;
     text-align: center;
@@ -67,7 +67,7 @@ export default {
     font-size: 16px;
     line-height: 16px;
     text-align: center;
-    letter-spacing: -0.02em;
+    letter-spacing: 0.04em;
     color: #FFFFFF;
   }
 
@@ -120,7 +120,12 @@ export default {
     outline: none;
   }
 
-  @media (max-width: 1279px){
+  @media all and (min-width: 320px) and (max-width: 1279px) {
+    #follow-label-block{
+      padding-top:135px;
+      padding-bottom: 0;
+    }
+
     #follow-label-block p {
       font-size: 28px;
       line-height: 20px;
@@ -141,6 +146,22 @@ export default {
 
     input, textarea{
       padding-left: 25px;
+    }
+
+    #icons-group {
+      gap: 20px;
+      margin-top: 25px;
+    }
+
+    #icons-group img{
+      width:30px;
+      height:30px;
+    }
+
+    #newsletter-label{
+      font-size: 12px;
+      line-height: 16px;
+      margin-top: 35px;
     }
   }
 </style>

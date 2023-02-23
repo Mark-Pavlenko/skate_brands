@@ -62,10 +62,15 @@
     flex-wrap: wrap;
     justify-content: center;
     row-gap: 10px;
+    margin: 0 10px 0 10px;
   }
 
   #copyright {
     margin-top: 13px;
+  }
+
+  #follow-label-block{
+    /*padding-top:135px;*/
   }
 }
 </style>
