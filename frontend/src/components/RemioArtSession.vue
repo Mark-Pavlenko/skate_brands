@@ -39,9 +39,6 @@
               ただければ幸いです。
             </li>
           </ul>
-          <!--          <p>-->
-
-          <!--          </p>-->
         </div>
       </div>
       <div id="art-block" class="item">
@@ -72,7 +69,7 @@ export default {
 
 #remio-title-wrapper {
   position: absolute;
-  width: 650px;
+  width: 700px;
   margin-top: -50px;
   z-index: 10;
 }
@@ -160,7 +157,7 @@ export default {
 
 #info-list {
   margin-top: 70px;
-  padding: 0;
+  /*padding: 0;*/
   width: 538px;
   margin-left: -12px;
 }
@@ -202,51 +199,6 @@ export default {
   height: auto;
 }
 
-@media all and (min-width: 320px) and (max-width: 1200px) {
-  #remio {
-    padding: 125px 20px 0 20px;
-  }
-
-  #event-items-blocks {
-    flex-direction: column;
-    column-count: 1;
-    padding: 30px 0 0 0;
-  }
-
-  #art-block {
-    margin-left: auto;
-    width: auto;
-  }
-
-  #info-list {
-    width: auto;
-  }
-
-  #remio-title-wrapper {
-    width: auto;
-  }
-
-  #date-title {
-    width: auto;
-    font-size: 40px;
-    line-height: 36px;
-    margin-top: 30px;
-  }
-
-  #remio-title-wrapper h1 {
-    font-size: 60px;
-    line-height: 48px;
-  }
-
-  #description {
-    width: auto;
-  }
-
-  #sweetshots-grid {
-    width: auto;
-  }
-}
-
 @media all and (max-width: 479px) {
   #remio-art-session {
     display: none;
@@ -267,15 +219,19 @@ export default {
     letter-spacing: -0.02em;
   }
 
-  #info-list{
-    margin: 0 0 0 12px;
-    font-family: 'YuGothic';
-    font-style: normal;
-    font-weight: 500;
+  #description{
+    margin-top: 10px;
+  }
+
+
+  #art-block h3{
+    font-size: 40px;
+    line-height: 36px;
+  }
+
+  .items-subtitle{
     font-size: 13px;
     line-height: 16px;
-    letter-spacing: -0.03em;
-    color: #FFFFFF;
   }
 }
 
@@ -286,6 +242,64 @@ export default {
 
   #info-title-mobile {
     display: none;
+  }
+}
+
+@media all and (min-width: 320px) and (max-width: 1200px) {
+  #remio {
+    padding: 125px 20px 0 20px;
+  }
+
+  #event-items-blocks {
+    flex-direction: column;
+    column-count: 1;
+    padding: 30px 0 0 0;
+  }
+
+  #art-block {
+    margin-left: auto;
+    width: auto;
+  }
+
+  #remio-title-wrapper {
+    width: auto;
+  }
+
+  #date-title {
+    width: auto;
+    font-size: 40px;
+    line-height: 36px;
+    margin-top: 30px;
+  }
+
+  #remio-title-wrapper h1 {
+    font-size: 60px;
+    line-height: 48px;
+    margin-top: 30px;
+  }
+
+  #description {
+    width: auto;
+  }
+
+  #sweetshots-grid {
+    width: auto;
+  }
+
+  #art-block {
+    margin-top: 70px;
+  }
+
+  #info-list{
+    width: auto;
+    margin-top: 10px;
+    font-family: 'YuGothic';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
   }
 }
 

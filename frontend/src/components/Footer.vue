@@ -57,11 +57,7 @@
   text-align: center;
 }
 
-@media all and (max-width: 768px) {
-  #main-footer {
-    height: 241px;
-  }
-
+@media all and (min-width: 320px) and (max-width: 1200px) {
   #links{
     flex-wrap: wrap;
     justify-content: center;
