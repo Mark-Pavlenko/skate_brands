@@ -43,7 +43,7 @@ export default {
   font-size: 48px;
   line-height: 40px;
   text-align: center;
-  letter-spacing: 0.08em;
+  letter-spacing: -0.02em;
   color: #FFFFFF;
 }
 
