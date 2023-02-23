@@ -23,10 +23,6 @@ name: "MainPage",
 
 <style scoped>
     #main-page {
-      margin: 0 !important;
-      background-image: url("@/assets/images/background-page.png") !important ;
-      background-attachment: fixed;
-      background-repeat: no-repeat;
-      background-size: 100% 100%;
+
     }
 </style>
