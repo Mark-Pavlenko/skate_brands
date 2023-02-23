@@ -18,9 +18,9 @@
           REMIOコラボレーションの限定アイテムを多数販売。
         </p>
         <div id="sweetshots-grid">
-          <img src="@/assets/images/sweetshot_1.png" alt="sweetshot_1.png" width="151" height="154"/>
-          <img src="@/assets/images/sweetshot_2.png" alt="sweetshot_2.png" width="162" height="165"/>
-          <img src="@/assets/images/sweetshot_3.png" alt="sweetshot_3.png" width="144" height="160"/>
+          <img src="@/assets/images/sweetshot_1.png" alt="sweetshot_1.png" />
+          <img src="@/assets/images/sweetshot_2.png" alt="sweetshot_2.png" />
+          <img src="@/assets/images/sweetshot_3.png" alt="sweetshot_3.png" />
         </div>
         <div id="info-list-wrapper">
           <ul id="info-list">
@@ -84,8 +84,8 @@ export default {
 }
 
 #art-session-layout img {
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: auto;
 }
 
 #date-title {
@@ -117,11 +117,11 @@ export default {
   flex-direction: row;
   padding: 45px 50px 0 0;
   column-count: 2;
-  column-gap: 100px;
+  justify-content: space-between;
 }
 
 #limited-items {
-  width: 560px;
+  /*width: 560px;*/
 }
 
 #limited-items h4 {
@@ -151,7 +151,7 @@ export default {
 }
 
 #sweetshots-grid img {
-  max-width: 33%;
+  width: 33%;
 }
 
 #info-list {
@@ -191,9 +191,64 @@ export default {
 }
 
 #column-street-art img {
-  width: 480px;
-  height: 292px;
+  /*width: 480px;*/
+  /*height: 292px;*/
   margin-top: 10px;
+  width: 100%;
+  height: auto;
 }
+
+@media all and (min-width: 320px) and (max-width: 1200px)  {
+  #remio{
+    padding: 125px 20px 0 20px;
+  }
+
+  #event-items-blocks {
+    flex-direction: column;
+    column-count: 1;
+    padding: 45px 20px 0 0;
+  }
+
+  #art-block {
+    margin-left: auto;
+    width: auto;
+  }
+
+  #info-list{
+    width: auto;
+  }
+
+  #remio-title-wrapper {
+    width: auto;
+  }
+
+  #date-title {
+    width: auto;
+    font-size: 40px;
+    line-height: 36px;
+  }
+
+  #remio-title-wrapper h1{
+    font-size: 60px;
+    line-height: 48px;
+  }
+
+  #description{
+  width: auto;
+   }
+
+  #sweetshots-grid{
+    width: auto;
+  }
+}
+
+@media all and (min-width: 1440px) {
+  #event-items-blocks{
+    column-gap: normal;
+    justify-content: space-between;
+  }
+}
+
+
 
 </style>
