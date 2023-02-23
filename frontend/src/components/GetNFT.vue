@@ -10,9 +10,7 @@
         <a href="#" id="online-store" class="active-link">ONLINE STORE</a>
         <a href="#" class="active-link">SHOP LIST</a>
     </div>
-    <div id="img-layout">
-      <img src="@/assets/images/get-nft-card.png" alt="get-nft-card"/>
-    </div>
+      <img id="get-nft-img" src="@/assets/images/get-nft-card.png" alt="get-nft-card"/>
   </div>
 </template>
 
@@ -32,8 +30,8 @@ export default {
   position: relative;
 }
 
-#main img {
-  max-width: 70%;
+#get-nft {
+  /*max-width: 70%;*/
   position: absolute;
   top: 0;
   right: 0;
@@ -73,6 +71,7 @@ export default {
 #description {
   margin-top: 5px;
   width: 530px;
+  width: 40%;
 }
 
 #online-store {
@@ -91,35 +90,21 @@ export default {
   color: #94C93D;
 }
 
-#img-layout{
-  display: flex;
-  justify-content: end;
+#get-nft-img {
+  position: absolute;
+  right: 0;
+  max-width: 100%;
+  height: inherit;
+  padding-top: 150px;
 }
 
-@media all and (max-width: 600px){
-  #main img {
-    max-width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-top: 25px;
-
-  }
-}
-
-@media all and (max-width: 750px) {
-
+@media all and (min-width: 320px) and (max-width: 1200px) {
   #main{
-    height: 600px;
-  }
-
-  #main img{
-    margin-bottom: 0;
+    height: 700px;
   }
 
   #title-block-layout{
     margin-left: 20px;
-    margin-top: 200px;
   }
 
   #how-to-get {
@@ -143,6 +128,37 @@ export default {
     font-size: 16px;
     line-height: 17px;
   }
+
+  #get-nft-img {
+    padding-top: 80px;
+
+  }
 }
+
+@media all and (max-width: 619px) {
+  #main {
+    height: 600px;
+  }
+
+  #get-nft-img{
+    margin-bottom: 0;
+    width: 100%;
+    height: auto !important;
+    top: 0;
+    margin-top:50px;
+  }
+}
+
+@media screen and (min-width: 620px) and (max-width: 1200px){
+  #get-nft-img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  #description{
+    width: 50%;
+  }
+}
+
 
 </style>

@@ -64,7 +64,7 @@ export default {
 
 #remio {
   background-color: #000000;
-  padding: 0 50px 0 50px;
+  padding: 250px 50px 0 50px;
 }
 
 #remio-title-wrapper {
@@ -247,7 +247,7 @@ export default {
 
 @media all and (min-width: 320px) and (max-width: 1200px) {
   #remio {
-    padding: 125px 20px 0 20px;
+    padding: 90px 20px 0 20px;
   }
 
   #event-items-blocks {
@@ -275,7 +275,7 @@ export default {
   #remio-title-wrapper h1 {
     font-size: 60px;
     line-height: 48px;
-    margin-top: 30px;
+
   }
 
   #description {
