@@ -26,7 +26,7 @@ export default {
   },
   methods: {
     handleScroll() {
-      if (window.scrollY <= 596) {
+      if (window.scrollY <= 576) {
         this.scrollTop = Math.round(window.scrollY / 3);
       }
     },
