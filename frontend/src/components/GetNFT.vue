@@ -50,7 +50,7 @@ export default {
 #get-nft-title {
   flex: 1;
   display: flex;
-  font-family: 'Archivo Expanded';
+  font-family:  'Archivo', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 120px;
@@ -60,7 +60,7 @@ export default {
 
 #how-to-get{
   margin-top: 50px;
-  font-family: 'Archivo Expanded';
+  font-family:  'Archivo', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 48px;
@@ -75,7 +75,7 @@ export default {
 }
 
 .en-text{
-  font-family: 'Archivo Expanded', sans-serif;
+  font-family:  'Archivo', sans-serif;
 }
 
 #online-store {
@@ -84,7 +84,7 @@ export default {
 
 .active-link{
   text-decoration: none;
-  font-family: 'Archivo Expanded', sans-serif;
+  font-family:  'Archivo', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;

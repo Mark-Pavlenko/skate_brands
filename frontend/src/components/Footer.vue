@@ -47,7 +47,7 @@
 }
 
 #copyright {
-  font-family: 'Archivo Expanded', sans-serif;
+  font-family:  'Archivo', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
@@ -58,7 +58,7 @@
 }
 
 .en-label{
-  font-family: 'Archivo Expanded', sans-serif !important;
+  font-family:  'Archivo', sans-serif !important;
 }
 
 @media all and (min-width: 320px) and (max-width: 1200px) {
@@ -74,7 +74,7 @@
   }
 
   .en-label {
-    font-family: 'Archivo Expanded', sans-serif !important;
+    font-family:  'Archivo', sans-serif !important;
   }
 }
 </style>

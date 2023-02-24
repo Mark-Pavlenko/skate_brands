@@ -37,7 +37,7 @@ export default {
 
 #title{
   padding-top: 62px;
-  font-family: 'Archivo Black', sans-serif;
+  font-family: 'Archivo', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 48px;
@@ -93,7 +93,7 @@ export default {
 }
 
 .item h3{
-  font-family: 'Archivo Black', sans-serif;
+  font-family: 'Archivo', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 32px;

@@ -40,7 +40,7 @@ export default {
   }
 
   #follow-label-block p {
-    font-family: 'Archivo Expanded', sans-serif;
+    font-family:  'Archivo', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 48px;
@@ -71,7 +71,7 @@ export default {
   }
 
   #newsletter-label p {
-    font-family: 'Archivo Expanded', sans-serif;
+    font-family:  'Archivo', sans-serif;
   }
 
   #email-block {
@@ -107,7 +107,7 @@ export default {
 
   #newsletter-email::placeholder{
     color: #949494;
-    font-family: 'Archivo Expanded', sans-serif;
+    font-family:  'Archivo', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 19px;

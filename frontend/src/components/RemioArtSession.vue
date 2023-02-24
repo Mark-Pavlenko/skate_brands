@@ -75,7 +75,7 @@ export default {
 }
 
 #remio-title-wrapper h1 {
-  font-family: 'Archivo Expanded', sans-serif;
+  font-family:  'Archivo', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 120px;
@@ -92,7 +92,7 @@ export default {
 #date-title {
   width: 632px;
   margin-top: 53px;
-  font-family: 'Archivo Expanded', sans-serif;
+  font-family:  'Archivo', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 80px;
@@ -126,7 +126,7 @@ export default {
 }
 
 #limited-items h4 {
-  font-family: 'Archivo Expanded', sans-serif;
+  font-family:  'Archivo', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 32px;
@@ -182,7 +182,7 @@ export default {
 }
 
 #art-block h3 {
-  font-family: 'Archivo Expanded', sans-serif;
+  font-family:  'Archivo', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 80px;
@@ -209,7 +209,7 @@ export default {
 
   #info-title-mobile{
     margin-top: 40px;
-    font-family: 'Archivo Expanded', sans-serif;
+    font-family:  'Archivo', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 20px;
