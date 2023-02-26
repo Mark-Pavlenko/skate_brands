@@ -5,5 +5,10 @@
   },
   "devDependencies": {
     "husky": "^7.0.4"
+  },
+  "dependencies": {
+    "gsap": "^3.11.4",
+    "jquery": "^3.6.3",
+    "scrollmagic-plugin-gsap": "^1.0.4"
   }
 }
