@@ -2,7 +2,6 @@
   <div class="app">
       <router-view/>
     </div>
-<!--  <MainFooter/>-->
 </template>
 <script lang="ts">
 import MainHeader from "@/components/MainHeader.vue";

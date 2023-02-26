@@ -95,10 +95,7 @@ export default {
 
 .trigger{
   position: absolute;
-  left: 50%;
-  top: 25%;
   transform: translate(-50%, -50%);
-  color: green;
   width: 20em;
   text-align: center;
   z-index: 1;
