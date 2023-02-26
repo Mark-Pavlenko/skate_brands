@@ -18,7 +18,6 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 library.add(faArrowRight);
 const emitter = mitt();
-
 const app = createApp(App).use(i18n).use(router).use(store).use(VueSweetalert2).use(Web3AuthPlugin).use(AxiosPlugin).use(MasonryWall).use(BootstrapVue3).component('font-awesome-icon', FontAwesomeIcon);
 app.provide("MAX_POST_CHARACTERS", 400);
 app.config.globalProperties.emitter = emitter;

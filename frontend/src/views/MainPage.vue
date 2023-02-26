@@ -3,7 +3,113 @@
   <div class="frame">
     <img  class="image" id="imgsequence" src="http://399.michaelkennedy.ch/bw_frames/0000.jpg" />
   </div>
-  <div class="pageExtender"></div>
+  <div id="test">
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content</div>
+    <div>Content last</div>
+  </div>
 <!--  <div id="main-page" :style="{ backgroundImage: 'url(' + getBackgroundImage + ')' }">-->
 <!--    <NFTSet/>-->
 <!--    <WhatIsThis/>-->
@@ -23,6 +129,8 @@ import RemioArtSession from '@/components/RemioArtSession.vue';
 import { TimelineMax, Linear } from 'gsap';
 import { ScrollMagicPluginGsap } from "scrollmagic-plugin-gsap";
 ScrollMagicPluginGsap(ScrollMagic, TweenMax);
+
+
 import $ from 'jquery';
 export default {
   name: "MainPage",
@@ -31,7 +139,7 @@ export default {
     let framePath = 'https://www.apple.com/105/media/us/airpods-pro/2019/1299e2f5_9206_4470_b28e_08307a42f19b/anim/sequence/large/02-head-bob-turn/';
     let nFrames = 130;
     let fileType = ".jpg";
-    let pageLengt = 20000;
+    let pageLengt = 2000;
 
     let images = [];
     let numberSequence = [];
@@ -79,7 +187,7 @@ export default {
         duration: pageLengt,
       })
           .setTween(ImageSequenceTween)
-          .addIndicators() // add indicators (requires plugin)
+          // .addIndicators() // add indicators (requires plugin)
           .addTo(ImageSequenceController);
         console.log('scene', scene);
   }
@@ -112,10 +220,10 @@ export default {
 </script>
 
 <style scoped>
-body{
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  background-color: black;
+#test{
+  position: absolute;
+  z-index: 1000;
+  background-color: red;
 }
 
 .trigger{
@@ -123,39 +231,26 @@ body{
   left: 50%;
   top: 25%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: green;
   width: 20em;
   text-align: center;
   z-index: 1;
   font-size: 2vh;
 }
 
-.mobileframe{
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 94%;
-  height: 96%;
-  border: solid 20px white;
-  z-index: 1;
-  opacity: 0;
-}
-
 .frame {
   position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  /*transform: translate(-50%, -50%);*/
   width: 100%;
-  height: 80vh;
+  /*height: 80vh;*/
   opacity: 1;
 }
 
 .image {
+  max-width: 100%;
   height: 100%;
-  display: block;
-  margin: auto;
+  /*display: block;*/
+  /*margin: auto;*/
 }
 
 /*#main-page {*/
