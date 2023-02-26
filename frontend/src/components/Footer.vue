@@ -16,7 +16,7 @@
 
 <style scoped>
 #main-footer {
-  position: absolute;
+  /*position: absolute;*/
   width: 100%;
   height: 112px;
   background-color: #000;
@@ -26,7 +26,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 35px;
+  padding-top: 35px;
 }
 
 #links{

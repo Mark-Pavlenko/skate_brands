@@ -245,7 +245,7 @@ export default {
 
 @media all and (min-width: 320px) and (max-width: 1200px) {
   #remio {
-    padding: 90px 20px 0 20px;
+    padding: 50px 20px 0 20px;
   }
 
   #event-items-blocks {

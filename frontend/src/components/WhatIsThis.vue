@@ -105,7 +105,7 @@ export default {
 
 @media (max-width: 750px){
   #layout {
-    height: 390px;
+    height: 365px;
   }
 
   #event-layout{
