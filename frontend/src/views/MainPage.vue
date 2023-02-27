@@ -81,7 +81,7 @@ export default {
     },
 
     scrollMeTo() {
-      let element = document.getElementById( "remio")
+      let element = document.getElementById( "date-title")
       let top = element.offsetTop;
       window.scrollTo({ top: top, behavior: "smooth" });
     }

@@ -8,7 +8,7 @@
       <img id="remio-art-session-mobile" src="@/assets/images/remio-art-session-mobile.png"
            alt="remio-art-session-mobile.png"/>
     </div>
-    <h2 class="date-title"><span>SAT JUNE 6, </span> <span>7PM-10PM</span></h2>
+    <h2 id="date-title"><span>SAT JUNE 6, </span> <span>7PM-10PM</span></h2>
     <p id="description">
       第一弾は、アーティストとしてグローバルで活躍する HUFアンバサダーのREMIOがメインゲスト。彼のライブペイントショーや、イベント来場者も参加できるアート作品の制作も行われます。
       開催場所：東京都内（会場情報はNFT Holderのみにお知らせします）
@@ -90,7 +90,7 @@ export default {
   height: auto;
 }
 
-.date-title {
+#date-title {
   display: flex;
   flex-direction: column;
   margin-top: 53px;
@@ -286,7 +286,7 @@ export default {
     padding: 0;
   }
 
-  .date-title {
+  #date-title {
     width: auto;
     font-size: 40px;
     line-height: 36px;
