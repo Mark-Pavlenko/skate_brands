@@ -1,16 +1,17 @@
 <template>
   <div id="main">
     <div id="title-block-layout">
-      <p id="get-nft-title">GET YOUR NFT</p>
+      <div class="get-nft-title desktop"><span>GET </span> <span>YOUR NFT</span></div>
+      <div class="get-nft-title mobile"><span>GET </span> <span>YOUR </span> <span>NFT</span></div>
       <p id="how-to-get">HOW TO GET</p>
       <p id="description">取得方法：期間内に<span class="en-text">HUF FLAGSHIP STORES</span>または
         <span class="en-text">HUF JAPAN OFFICIAL ONLINE STORE</span>で商品をご購入した方（数に限りがございます）
         配布期間：2023年XX月XX日〜XX月XX日
       </p>
-        <a href="#" id="online-store" class="active-link">ONLINE STORE</a>
-        <a href="#" class="active-link">SHOP LIST</a>
+      <a href="#" id="online-store" class="active-link">ONLINE STORE</a>
+      <a href="#" class="active-link">SHOP LIST</a>
     </div>
-      <img id="get-nft-img" src="@/assets/images/get-nft-card.png" alt="get-nft-card"/>
+    <img id="get-nft-img" src="@/assets/images/get-nft-card.png" alt="get-nft-card"/>
   </div>
 </template>
 
@@ -30,15 +31,7 @@ export default {
   position: relative;
 }
 
-/*#get-nft {*/
-/*  !*max-width: 70%;*!*/
-/*  position: absolute;*/
-/*  top: 0;*/
-/*  right: 0;*/
-/*  margin-top: 50px;*/
-/*}*/
-
-#title-block-layout{
+#title-block-layout {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -47,10 +40,13 @@ export default {
   z-index: 10;
 }
 
-#get-nft-title {
-  flex: 1;
+.get-nft-title {
   display: flex;
-  font-family:  'Archivo', sans-serif;
+  flex-direction: column;
+}
+
+.get-nft-title span {
+  font-family: 'Archivo', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 120px;
@@ -58,9 +54,13 @@ export default {
   letter-spacing: -0.02em;
 }
 
-#how-to-get{
+.mobile {
+  display: none;
+}
+
+#how-to-get {
   margin-top: 50px;
-  font-family:  'Archivo', sans-serif;
+  font-family: 'Archivo', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 48px;
@@ -74,17 +74,17 @@ export default {
   width: 40%;
 }
 
-.en-text{
-  font-family:  'Archivo', sans-serif;
+.en-text {
+  font-family: 'Archivo', sans-serif;
 }
 
 #online-store {
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 
-.active-link{
+.active-link {
   text-decoration: none;
-  font-family:  'Archivo', sans-serif;
+  font-family: 'Archivo', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -103,12 +103,13 @@ export default {
 }
 
 @media all and (min-width: 320px) and (max-width: 1200px) {
-  #main{
+  #main {
     height: 700px;
   }
 
-  #title-block-layout{
+  #title-block-layout {
     margin-left: 20px;
+    margin-top: 300px;
   }
 
   #how-to-get {
@@ -116,8 +117,8 @@ export default {
     line-height: 20px;
   }
 
-  #get-nft-title {
-    font-size:60px;
+  .get-nft-title span {
+    font-size: 60px;
     line-height: 48px;
   }
 
@@ -128,7 +129,7 @@ export default {
     width: 90%;
   }
 
-  .active-link{
+  .active-link {
     font-size: 16px;
     line-height: 17px;
   }
@@ -144,22 +145,31 @@ export default {
     height: 600px;
   }
 
-  #get-nft-img{
+  #get-nft-img {
     margin-bottom: 0;
     width: 100%;
     height: auto !important;
     top: 0;
   }
+
+  .desktop {
+    display: none;
+
+  }
+
+  .mobile {
+    display: flex;
+  }
 }
 
-@media screen and (min-width: 620px) and (max-width: 1200px){
+@media screen and (min-width: 620px) and (max-width: 1200px) {
   #get-nft-img {
     max-width: 100%;
     max-height: 100%;
-    margin-top:50px;
+    margin-top: 50px;
   }
 
-  #description{
+  #description {
     width: 50%;
   }
 }

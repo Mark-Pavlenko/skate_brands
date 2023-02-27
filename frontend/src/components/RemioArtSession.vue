@@ -1,7 +1,7 @@
 <template>
   <div id="remio">
-    <div id="remio-title-wrapper">
-      <h1>REMIO ART SESSION</h1>
+    <div class="remio-title-wrapper">
+      <span>REMIO </span> <span>ART </span> <span>SESSION</span>
     </div>
     <div id="art-session-layout">
       <img id="remio-art-session" src="@/assets/images/remio-art-session.png" alt="remio-art-session.png"/>
@@ -67,14 +67,15 @@ export default {
   padding: 250px 50px 0 50px;
 }
 
-#remio-title-wrapper {
+.remio-title-wrapper {
+  display: flex;
+  flex-direction: column;
   position: absolute;
-  width: 700px;
-  margin-top: -50px;
+  margin-top: -25px;
   z-index: 10;
 }
 
-#remio-title-wrapper h1 {
+.remio-title-wrapper span {
   font-family:  'Archivo', sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -245,7 +246,7 @@ export default {
 
 @media all and (min-width: 320px) and (max-width: 1200px) {
   #remio {
-    padding: 50px 20px 0 20px;
+    padding: 150px 20px 0 20px;
   }
 
   #event-items-blocks {
@@ -259,10 +260,6 @@ export default {
     width: auto;
   }
 
-  #remio-title-wrapper {
-    width: auto;
-  }
-
   #date-title {
     width: auto;
     font-size: 40px;
@@ -270,7 +267,7 @@ export default {
     margin-top: 30px;
   }
 
-  #remio-title-wrapper h1 {
+  .remio-title-wrapper span {
     font-size: 60px;
     line-height: 48px;
 
