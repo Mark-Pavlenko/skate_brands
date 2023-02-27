@@ -30,7 +30,7 @@ export default {
 
 <style scoped>
   #follow-now-block {
-    height: 393px;
+    height: 365px;
     background-color: black;
   }
 
@@ -124,7 +124,7 @@ export default {
 
   @media all and (min-width: 320px) and (max-width: 1200px) {
     #follow-label-block{
-      padding-top:135px;
+      padding-top:100px;
       padding-bottom: 0;
     }
 

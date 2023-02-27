@@ -170,7 +170,7 @@ export default {
   }
 
   #description {
-    width: 50%;
+    width: 43%;
   }
 }
 

@@ -71,7 +71,7 @@ export default {
   display: flex;
   flex-direction: column;
   position: absolute;
-  margin-top: -25px;
+  margin-top: -45px;
   z-index: 10;
 }
 
@@ -119,8 +119,12 @@ export default {
   display: flex;
   flex-direction: row;
   padding: 45px 0 0 0;
-  column-count: 2;
-  justify-content: space-between;
+  column-gap: 10%;
+  /*background-color: blue;*/
+}
+
+#limited-items{
+  /*background-color: orange;*/
 }
 
 #limited-items h4 {
@@ -150,11 +154,11 @@ export default {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 475px;
+  /*background: green;*/
 }
 
 #sweetshots-grid img {
-  width: 33%;
+  width: 33.33%;
 }
 
 #info-list {
@@ -177,8 +181,7 @@ export default {
 }
 
 #art-block {
-  margin-left: 68px;
-  width: 480px;
+  /*background-color: red;*/
 }
 
 #art-block h3 {
@@ -192,7 +195,7 @@ export default {
 }
 
 #column-street-art img {
-  margin-top: 10px;
+  padding-top: 10px;
   width: 100%;
   height: auto;
 }
@@ -202,8 +205,16 @@ export default {
 }
 
 @media all and (max-width: 479px) {
+  #remio {
+    padding: 150px 20px 0 20px;
+  }
+
   #remio-art-session {
     display: none;
+  }
+
+  .remio-title-wrapper{
+    margin-top: -25px;
   }
 
   #limited-items h4 {
@@ -241,6 +252,10 @@ export default {
 }
 
 @media all and (min-width: 480px) {
+  #remio{
+    padding: 150px 5% 0 5%;
+  }
+
   #remio-art-session-mobile {
     display: none;
   }
@@ -251,10 +266,6 @@ export default {
 }
 
 @media all and (min-width: 320px) and (max-width: 1200px) {
-  #remio {
-    padding: 150px 20px 0 20px;
-  }
-
   #event-items-blocks {
     flex-direction: column;
     column-count: 1;
@@ -264,6 +275,7 @@ export default {
   #art-block {
     margin-left: auto;
     width: auto;
+    padding: 0;
   }
 
   .date-title {
@@ -276,7 +288,6 @@ export default {
   .remio-title-wrapper span {
     font-size: 58px;
     line-height: 48px;
-
   }
 
   #description {
@@ -302,15 +313,9 @@ export default {
     color: #FFFFFF;
   }
 
-  #info-list-wrapper{
-    margin-left: -5px;
-  }
-}
-
-@media all and (min-width: 1440px) {
-  #event-items-blocks {
-    column-gap: normal;
-    justify-content: space-between;
+  #column-street-art img {
+    display: block;
+    margin: 0 auto;
   }
 }
 
