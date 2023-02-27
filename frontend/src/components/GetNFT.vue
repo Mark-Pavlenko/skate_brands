@@ -35,7 +35,7 @@ export default {
   display: flex;
   flex-direction: column;
   position: absolute;
-  margin-left: 50px;
+  margin-left: 3%;
   color: #FFFFFF;
   z-index: 10;
 }
@@ -108,7 +108,7 @@ export default {
   }
 
   #title-block-layout {
-    margin-left: 20px;
+    /*margin-left: 20px;*/
     margin-top: 300px;
   }
 
