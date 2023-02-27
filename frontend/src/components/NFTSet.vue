@@ -1,6 +1,6 @@
 <template>
     <div id="huf-nft-set" >
-      <img id="event-info-img" src="@/assets/images/event-info-big.png" alt="event-info-big"/>
+      <img id="event-info-img" src="@/assets/images/event-info-big.png" alt="event-info-big" @click="$emit('anchor-event', 'remioComponent')"/>
       <div id="img-layout">
         <img src="@/assets/images/huf-nft-set.png" alt="huf-nft-set"/>
       </div>
@@ -31,6 +31,7 @@ export default {
   height: 162px;
   margin-top: 113px;
   margin-right: 93px;
+  cursor: pointer;
 }
 
 #img-layout img {

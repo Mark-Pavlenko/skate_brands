@@ -4,10 +4,10 @@
     <img class="image" id="imgsequence" src="@/assets/3sec_sample/2sec_sample_1.png" alt="background">
   </div>
   <div id="main-page">
-      <NFTSet/>
+      <NFTSet @anchor-event="scrollMeTo"/>
       <WhatIsThis/>
       <GetNFT/>
-      <RemioArtSession/>
+      <RemioArtSession />
       <FollowNow/>
       <MainFooter/>
     </div>
@@ -53,7 +53,7 @@ export default {
               repeat: 0,
               immediateRender: true,
               ease: Linear.easeNone,
-              onUpdate: function () {
+              onUpdate () {
                 $("#imgsequence").attr("src", imagesPaths[obj.curImg]);
               }
             }
@@ -75,9 +75,16 @@ export default {
     importAll(r) {
       r.keys().forEach(key => (this.proxyImages.push({
         fullPath: r(key),
+        // find image number in folder sequences
         imageNumber: +key.replace(/.*\D(?=\d)|\D+$/g, "")
       })));
     },
+
+    scrollMeTo() {
+      let element = document.getElementById( "remio")
+      let top = element.offsetTop;
+      window.scrollTo({ top: top, behavior: "smooth" });
+    }
   },
 };
 </script>
