@@ -8,7 +8,7 @@
       <img id="remio-art-session-mobile" src="@/assets/images/remio-art-session-mobile.png"
            alt="remio-art-session-mobile.png"/>
     </div>
-    <h2 id="date-title">SAT JUNE 6, 7PM-10PM</h2>
+    <h2 class="date-title"><span>SAT JUNE 6, </span> <span>7PM-10PM</span></h2>
     <p id="description">
       第一弾は、アーティストとしてグローバルで活躍する HUFアンバサダーのREMIOがメインゲスト。彼のライブペイントショーや、イベント来場者も参加できるアート作品の制作も行われます。
       開催場所：東京都内（会場情報はNFT Holderのみにお知らせします）
@@ -76,7 +76,7 @@ export default {
 }
 
 .remio-title-wrapper span {
-  font-family:  'Archivo', sans-serif;
+  font-family: 'Archivo', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 120px;
@@ -90,10 +90,11 @@ export default {
   height: auto;
 }
 
-#date-title {
-  width: 632px;
+.date-title {
+  display: flex;
+  flex-direction: column;
   margin-top: 53px;
-  font-family:  'Archivo', sans-serif;
+  font-family: 'Archivo', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 80px;
@@ -122,12 +123,8 @@ export default {
   justify-content: space-between;
 }
 
-#limited-items {
-  /*width: 560px;*/
-}
-
 #limited-items h4 {
-  font-family:  'Archivo', sans-serif;
+  font-family: 'Archivo', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 32px;
@@ -158,8 +155,6 @@ export default {
 
 #info-list {
   margin-top: 70px;
-  /*padding: 0;*/
-  width: 538px;
   margin-left: -12px;
 }
 
@@ -183,7 +178,7 @@ export default {
 }
 
 #art-block h3 {
-  font-family:  'Archivo', sans-serif;
+  font-family: 'Archivo', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 80px;
@@ -203,14 +198,14 @@ export default {
     display: none;
   }
 
-  #limited-items h4{
+  #limited-items h4 {
     font-size: 20px;
     line-height: 21px;
   }
 
-  #info-title-mobile{
+  #info-title-mobile {
     margin-top: 40px;
-    font-family:  'Archivo', sans-serif;
+    font-family: 'Archivo', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 20px;
@@ -218,24 +213,24 @@ export default {
     letter-spacing: -0.02em;
   }
 
-  #description{
+  #description {
     margin-top: 10px;
   }
 
 
-  #art-block h3{
+  #art-block h3 {
     font-size: 40px;
     line-height: 36px;
   }
 
-  .items-subtitle{
+  .items-subtitle {
     font-size: 13px;
     line-height: 16px;
   }
 }
 
 @media all and (min-width: 480px) {
-  #remio-art-session-mobile{
+  #remio-art-session-mobile {
     display: none;
   }
 
@@ -260,7 +255,7 @@ export default {
     width: auto;
   }
 
-  #date-title {
+  .date-title {
     width: auto;
     font-size: 40px;
     line-height: 36px;
@@ -285,8 +280,7 @@ export default {
     margin-top: 70px;
   }
 
-  #info-list{
-    width: auto;
+  #info-list {
     margin-top: 10px;
     font-family: 'Noto Sans JP', sans-serif;
     font-style: normal;

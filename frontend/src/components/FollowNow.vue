@@ -56,7 +56,6 @@ export default {
     flex-direction: row;
     justify-content: center;
     gap: 30px;
-    /*gap: 50px;*/
   }
 
   #newsletter-label {
