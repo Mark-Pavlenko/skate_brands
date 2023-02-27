@@ -4,13 +4,13 @@
     <img class="image" id="imgsequence" src="@/assets/3sec_sample/2sec_sample_1.png" alt="background">
   </div>
   <div id="main-page">
-    <NFTSet/>
-    <WhatIsThis/>
-    <GetNFT/>
-    <RemioArtSession/>
-    <FollowNow/>
-    <MainFooter/>
-  </div>
+      <NFTSet/>
+      <WhatIsThis/>
+      <GetNFT/>
+      <RemioArtSession/>
+      <FollowNow/>
+      <MainFooter/>
+    </div>
 </template>
 
 <script>
@@ -32,26 +32,16 @@ export default {
   data() {
     return {
       proxyImages: [],
-      // imagesPaths: []
     }
   },
   mounted() {
     this.importAll(require.context('../assets/3sec_sample/', true, /\.png$/));
-
-    let nFrames = 190;
-    let pageLength = 2000;
-
+    const pageLength = 4000;
     let imagesPaths = [];
-    let numberSequence = [];
 
-    this.proxyImages.map(el => {
-      console.log(el);
-      imagesPaths.push(el);
+    this.proxyImages.sort((a, b) => a.imageNumber - b.imageNumber).map(el => {
+      imagesPaths.push(el.fullPath);
     })
-
-    for (let i = 0; i < (nFrames); i++) {
-      numberSequence.push(i);
-    }
 
     let obj = {curImg: 0};
 
@@ -65,12 +55,9 @@ export default {
               ease: Linear.easeNone,
               onUpdate: function () {
                 $("#imgsequence").attr("src", imagesPaths[obj.curImg]);
-                $("#framesequencenumber").text(numberSequence[obj.curImg]);
-
               }
             }
-        )
-
+        );
 
     let ImageSequenceController = new ScrollMagic.Controller();
 
@@ -86,7 +73,10 @@ export default {
   },
   methods: {
     importAll(r) {
-      r.keys().forEach(key => (this.proxyImages.push(r(key))));
+      r.keys().forEach(key => (this.proxyImages.push({
+        fullPath: r(key),
+        imageNumber: +key.replace(/.*\D(?=\d)|\D+$/g, "")
+      })));
     },
   },
 };
