@@ -118,7 +118,7 @@ export default {
 #event-items-blocks {
   display: flex;
   flex-direction: row;
-  padding: 45px 0 0 0;
+  padding: 45px 0 150px 0;
   column-gap: 10%;
   /*background-color: blue;*/
 }
