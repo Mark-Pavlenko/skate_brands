@@ -253,7 +253,7 @@ export default {
 
 @media all and (min-width: 480px) {
   #remio{
-    padding: 150px 5% 0 5%;
+    padding: 150px 4% 0 4%;
   }
 
   #remio-art-session-mobile {
