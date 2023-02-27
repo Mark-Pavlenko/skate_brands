@@ -16,7 +16,7 @@
     <div id="event-items-blocks">
       <div id="limited-items" class="item">
         <h4>REMIO LIMITED ITEMS</h4>
-        <p class="items-subtitle">
+        <p class="items-subtitle desktop" >
           REMIOコラボレーションの限定アイテムを多数販売。
         </p>
         <div id="sweetshots-grid">
@@ -132,6 +132,10 @@ export default {
   color: #FFFFFF;
 }
 
+.item {
+  width: 100%;
+}
+
 .items-subtitle {
   font-family: 'Noto Sans JP', sans-serif;
   font-style: normal;
@@ -193,6 +197,10 @@ export default {
   height: auto;
 }
 
+.desktop{
+  display: block;
+}
+
 @media all and (max-width: 479px) {
   #remio-art-session {
     display: none;
@@ -217,7 +225,6 @@ export default {
     margin-top: 10px;
   }
 
-
   #art-block h3 {
     font-size: 40px;
     line-height: 36px;
@@ -226,6 +233,10 @@ export default {
   .items-subtitle {
     font-size: 13px;
     line-height: 16px;
+  }
+
+  .desktop{
+    display: none;
   }
 }
 
@@ -263,7 +274,7 @@ export default {
   }
 
   .remio-title-wrapper span {
-    font-size: 60px;
+    font-size: 58px;
     line-height: 48px;
 
   }
@@ -289,6 +300,10 @@ export default {
     line-height: 16px;
     letter-spacing: -0.03em;
     color: #FFFFFF;
+  }
+
+  #info-list-wrapper{
+    margin-left: -5px;
   }
 }
 
