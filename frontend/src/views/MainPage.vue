@@ -5,7 +5,7 @@
 <!--      activate image scrolling sequence or video - just comment one or another to activate it-->
 
       <video id="video" tabindex="0" preload="auto" class="moving-layout">
-        <source src="https://drive.google.com/file/d/1YAKjlxulN-HPPmOb8GkAsQ5CTBYvhT97" type="video/mp4"/>
+        <source src="@/assets/movie.mp4" type="video/mp4"/>
       </video>
       <!--        <img class="moving-layout" id="imgsequence" src="@/assets/3sec_sample/2sec_sample_1.png" alt="background">-->
     </div>
@@ -87,7 +87,7 @@ export default {
     },
 
     scrollVideoByFrames() {
-      const playbackConst = 200,
+      const playbackConst = 300,
           setHeight = document.getElementById("trigger"),
           vid = document.getElementById('video');
 

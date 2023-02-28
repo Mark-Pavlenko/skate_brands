@@ -28,6 +28,7 @@ Temporary Items
 #
 node_modules
 /dist
+/src/assets/movie.mp4
 
 package-lock.json
 # local env files
@@ -49,3 +50,5 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+
