@@ -1,21 +1,21 @@
 <template>
   <div id="layout">
     <div id="block">
-      <p id="title">WHAT IS THIS?</p>
-      <p class="description">親愛なるHUFファミリーへ贈る、特別なブランド体験 全３回にわたるアーティストとのコラボレーション</p>
+      <p id="title">{{$t('what_is_this_title')}}</p>
+      <p class="description">{{$t('what_is_this_description')}}</p>
     </div>
     <div id="event-layout">
     <div id="event-items-blocks">
       <div id="event-block" class="item">
-        <h3>EVENT</h3>
+        <h3>{{$t('what_is_this_event')}}</h3>
       <p class="description item-description">
-        NFT 保有者のみ参加できる イベントの開催
+        {{$t('what_is_this_event_description')}}
       </p>
       </div>
       <div id="delimiter"></div>
       <div id="item-block" class="item">
-        <h3>ITEM</h3>
-      <p class="description item-description" >アーティストのコラボレーション アイテムを限定販売</p>
+        <h3>{{$t('what_is_this_item')}}</h3>
+      <p class="description item-description">{{$t('what_is_this_item_description')}}</p>
       </div>
     </div>
     </div>

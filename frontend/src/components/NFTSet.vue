@@ -4,7 +4,7 @@
       <div id="img-layout">
         <img src="@/assets/images/huf-nft-set.png" alt="huf-nft-set"/>
       </div>
-      <button id="join-now-btn">JOIN NOW</button>
+      <button id="join-now-btn">{{$t('join_now')}}</button>
     </div>
 </template>
 
