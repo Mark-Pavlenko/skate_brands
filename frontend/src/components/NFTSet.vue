@@ -29,8 +29,8 @@ export default {
   right: 0;
   width: 162px;
   height: 162px;
-  margin-top: 113px;
-  margin-right: 93px;
+  /*margin: 113px 93px 0 0;*/
+  margin: 75px 75px 0 0;
   cursor: pointer;
 }
 
@@ -86,7 +86,8 @@ export default {
 
 @media (min-width: 1280px) {
   #huf-nft-set {
-    height: 800px;
+    /*height: 800px;*/
+    height: 647px;
   }
 }
 
